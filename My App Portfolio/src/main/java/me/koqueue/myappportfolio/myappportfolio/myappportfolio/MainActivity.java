@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Gravity;
 import android.widget.Toast;
+import android.widget.Button;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -40,28 +41,9 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchApp(View v) {
-        String text = "This button will launch the ";
-        switch(v.getId()) {
-            case R.id.spotify:
-                text += "Spotify App!";
-                break;
-            case R.id.scores:
-                text += "Scores App!";
-                break;
-            case R.id.library:
-                text += "Library App!";
-                break;
-            case R.id.bib:
-                text += "Build It Bigger App!";
-                break;
-            case R.id.xyz:
-                text += "XYZ Reader!";
-                break;
-            case R.id.capstone:
-                text += "Capstone app!";
-                break;
-        }
+    public void launchApp(View view) {
+        Button btn = (Button) view;
+        CharSequence text = "This button will launch " + btn.getText();
         Toast toast = Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.BOTTOM, 0, 20);
         toast.show();
