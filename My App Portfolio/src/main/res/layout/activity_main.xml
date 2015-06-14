@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="#BBDEFB" android:paddingBottom="50dp">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:weightSum="1"
+                  android:id="@+id/layout" android:background="#BBDEFB">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="My Nanodegree Apps"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal" android:paddingTop="15dp"
+                android:paddingBottom="25dp" android:textColor="#2196F3" android:textSize="24sp"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spotify Streamer"
+                android:id="@+id/spotify" android:layout_gravity="center_horizontal" android:clickable="true"
+                android:onClick="launchApp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                android:background="#ff1976d2" android:textColor="#fff" android:paddingLeft="10dp"
+                android:paddingRight="10dp" android:minWidth="190dp" android:enabled="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scores App"
+                android:id="@+id/scores" android:layout_gravity="center_horizontal" android:clickable="true"
+                android:onClick="launchApp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
+                android:background="#ff1976d2" android:textColor="#fff" android:paddingLeft="10dp"
+                android:paddingRight="10dp" android:minWidth="190dp" android:enabled="true"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Library App"
+                android:id="@+id/library" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" android:background="#ff1976d2" android:textColor="#fff"
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:onClick="launchApp"
+                android:minWidth="190dp" android:clickable="true" android:enabled="true"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Build It Bigger"
+                android:id="@+id/bib" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" android:background="#ff1976d2" android:textColor="#fff"
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:onClick="launchApp"
+                android:minWidth="190dp" android:clickable="true" android:enabled="true"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="XYZ Reader"
+                android:id="@+id/xyz" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" android:background="#ff1976d2" android:textColor="#fff"
+                android:paddingLeft="10dp" android:paddingRight="10dp" android:onClick="launchApp"
+                android:minWidth="190dp" android:clickable="true" android:enabled="true"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Capstone: My Own App"
+                android:id="@+id/capstone" android:layout_gravity="center_horizontal" android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp" android:background="#0D47A1" android:paddingLeft="10dp"
+                android:paddingRight="10dp" android:textColor="#fff" android:onClick="launchApp"
+                android:minWidth="190dp" android:clickable="true" android:enabled="true"/>
+    </LinearLayout>
+</ScrollView>
